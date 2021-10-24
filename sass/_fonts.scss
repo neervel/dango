@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Stem-Medium"; 
+  src: url("../fonts/Stem-Medium.ttf"); 
+  font-style: normal; 
+  font-weight: normal; 
+} 
+
+@font-face {
+  font-family: "Stem-Bold"; 
+  src: url("../fonts/Stem-Bold.ttf"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family: "Stem-Light"; 
+  src: url("../fonts/Stem-Light.ttf"); 
+  font-style: normal; 
+  font-weight: normal; 
+} 
+
+@mixin medium {
+  font-family: "Stem-Medium", sans-serif;
+}
+
+@mixin light {
+  font-family: "Stem-Light", sans-serif;
+}
+
+@mixin bold {
+  font-family: "Stem-Bold", sans-serif;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/icon.svg">
+  <title>DANGO</title>
+  <script src="https://kit.fontawesome.com/59768ca919.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-block">
+        <div class="header-links">
+          <a href="https://vk.com/dango.club" target="_blank" class="header-links__item"><i class="fab fa-vk"></i></a>
+          <a href="https://www.instagram.com/dango.club/" target="_blank" class="header-links__item"><i class="fab fa-instagram"></i></a>
+          <a href="https://t.me/dango_support" target="_blank" class="header-links__item"><i class="fab fa-telegram-plane"></i></a>
+        </div>
+        <div class="header-info">
+          <a class="header-info__phone" href="tel:84993723722">+7 (499) 372-37-22</a>
+          <button id="info-btn" class="header-info__btn btn-fill btn"><span>?</span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="modal-info">
+    <div class="container">
+      <div class="modal-block">
+        <div class="modal-ask">
+          <h2 class="modal-form__title">Задай свой вопрос</h2>
+            <form id="modal-form">
+              <input name="name" id="name" type="text" class="modal-form__input" placeholder="Ваше имя:" required>
+              <input name="phone" id="phone" type="text" class="modal-form__input modal-form-phone" placeholder="Ваш телефон:" required>
+              <textarea name="text" id="text" cols="30" rows="10" class="modal-form__text" placeholder="Текст сообщения:" required></textarea>
+              <button type="submit" class="modal-form__submit btn btn-fill"><span>Отправить</span></button>
+            </form> 
+        </div>
+        <div class="modal-faq">
+          <h2 class="modal-faq__title">Часто задаваемые вопросы</h2>
+          <div class="modal-dialog">
+            <div class="modal-dialog_right">
+              <p class="modal-dialog__text">Как пассажир и водитель находят друг друга?</p>
+            </div>
+            <div class="modal-dialog_left">
+              <p class="modal-dialog__text">Первый создает маршрут и количество мест, нажимает «Поехали», и переходит к списку водителей. Для водителей интерфейс похож на навигатор: они выбирают маршрут, время выезда, ставят цену за место и переходят к списку пассажиров.  Таким образом, после нехитрых манипуляций и те и другие могут отправлять заявки, чтобы поехать вместе</p>
+            </div>
+            <div class="modal-dialog_right">
+              <p class="modal-dialog__text">Как стать водителем?</p>
+            </div>
+            <div class="modal-dialog_left">
+              <p class="modal-dialog__text">Нужно подтвердить, что машина не угнана сфотографировав стс, и показать права.  Это делается один раз. Мы работаем с водителями,  которые водят не меньше 1го года.</p>
+            </div>
+            <div class="modal-dialog_right">
+              <p class="modal-dialog__text">Как быть с безопасностью и фейковыми пользователями?</p>
+            </div>
+            <div class="modal-dialog_left">
+              <p class="modal-dialog__text">Мы очень серьезно подошли к этому вопросу. Все водители проходят проверку. Также будет система рейтингов и отзывов. Нежелательных пользователей будем блокировать.</p>
+            </div>
+            <div class="modal-dialog_right">
+              <p class="modal-dialog__text">Кто попадет в бан?</p>
+            </div>
+            <div class="modal-dialog_left">
+              <p class="modal-dialog__text">Пассажир или водитель, который  3 раза спрыгнет с поездки в последний момент. Также на которого 5 раз пожалуются.
+                <br>Водители, которые приехали на другой тачке, хотят больше денег, чем написали в приложении.
+                <br>Попутчик, который не заплатит.
+              </p>
+            </div>
+            <div class="modal-dialog_right">
+              <p class="modal-dialog__text">Где будет доступен сервис?</p>
+            </div>
+            <div class="modal-dialog_left">
+              <p class="modal-dialog__text">Пока в Москве и МО в пределах ЦКАД. После будем приходить в другие города миллионники.</p>
+            </div>
+            <div class="modal-dialog_right">
+              <p class="modal-dialog__text">Что по ценам?</p>
+            </div>
+            <div class="modal-dialog_left">
+              <p class="modal-dialog__text">В среднем такие поездки будут обходиться дешевле, чем такси в 3-4 раза. Для пассажиров цена будет такой, как выставил водитель + 10% сервисный сбор. А для водителей цена будет предлагаться автоматически, но с возможностью ее корректировать как в большую так и в меньшую сторону.</p>
+            </div>
+            <div class="modal-dialog_right">
+              <p class="modal-dialog__text">Можно ли заплатить картой и наличкой?</p>
+            </div>
+            <div class="modal-dialog_left">
+              <p class="modal-dialog__text">При регистрации нужно привязать карту .
+                <br>Пассажир бронирует место - мы резервируем деньги. Приехали - мы отправили водителю. Водители в конечной точке получают на карту сумму сразу за всех пассажиров.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-form-1 bg-form"></div>
+  <div class="bg-form-2 bg-form"></div>
+  <div class="bg-modal bg-form"></div>
+  <div class="bg-img bg-form"></div>
+
+  <div class="main-form-success">
+    <p>
+      <button class="main-form-close">✕</button>
+      Спасибо, ваша заявка получена.<br>Наши коллеги скоро свяжутся с вами.
+    </p>
+  </div>
+  <div class="modal-form-success">
+    <button class="modal-form-close">✕</button>
+    <p>
+      Благодарим за вопрос.<br>Ваше сообщение отправлено.
+    </p>
+  </div>
+
+  <main class="main">
+    <div class="container">
+      <div class="main-block">
+        <form class="main-form" id="main-form">
+          <i class="main-form__img fas fa-phone-alt"></i>
+          <input class="main-form__number" type="text" name="number" id="number" required></input>
+          <input class="main-form__btn btn-fill btn" type="submit" value="Присоединяйся!">
+        </form>
+       
+        <div class="main-cards owl-carousel">
+
+          <div class="main-card main-card-1">
+            
+            <div class="main-card-block">
+              <h2 class="main-card-1__subtitle">mobile app</h2>
+              <h1 class="main-card-1__title">Dango</h1>
+              <p class="main-card-1__text">Dango – это мобильное приложение, которое поможет тебе доехать до пункта назначения в компании друзей.</p>
+            </div>
+          </div>
+
+          <div class="main-card main-card-2">
+            <div class="main-card-block">
+              <h2 class="main-card-2__subtitle">#стань</h2>
+              <h1 class="main-card-2__title">водителем</h1>
+              <p class="main-card-2__text">Регистрируйся в приложении Dango и выбирай себе попутчиков. Организуй поездку быстро и легко. </p>
+            </div>
+          </div>
+
+          <div class="main-card main-card-3">
+            <div class="main-card-block">
+              <h2 class="main-card-3__subtitle">#стань</h2>
+              <h1 class="main-card-3__title">пассажиром</h1>
+              <p class="main-card-3__text">Регистрируйся в приложении Dango и выбирай машину, на которой поедешь. Сделать выбор в пользу комфорта или стиля, решать тебе. Сделай поездку ярче.</p>
+            </div>
+          </div>
+
+          <div class="main-card main-card-4">
+            <div class="main-card-block">
+              <h1 class="main-card-4__title">#Dango</h1>
+              <h2 class="main-card-4__subtitle">club</h2>
+              <p class="main-card-4__text">Ты на нашей волне. Регистрируйся в приложении и стань членом клуба Dango. Создай свою тусовку вместе с нами и найди новые идеи в поездках по городу.</p>
+            </div>
+          </div>
+
+          
+
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/maskedinput.js"></script>
+  <script src="js/validate.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
